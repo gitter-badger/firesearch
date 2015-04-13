@@ -28,7 +28,7 @@ dependencies {
    </intent-filter>
 </activity>
 ```
-After wards, ensure you are using the following permisions (put this outside your application tag)
+Afterwards, ensure you are using the following permisions (put this outside your application tag)
 
 ```java
 <uses-permissionandroid:name="android.permission.READ_USER_DICTIONARY"/>
