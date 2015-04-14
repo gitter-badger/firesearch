@@ -68,7 +68,7 @@ because the Android system looks for this in your manifest adn add the following
 <menu xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto">
     
-    <item android:id="@+id/menu_search" //name your exactly this
+    <item android:id="@+id/menu_search" //name your id exactly this
            android:title="@string/search" //same for your title
             app:showAsAction="ifRoom|collapseActionView" //configure this as you see fit; though this works good
             android:actionViewClass="android.widget.SearchView" //leave this as is, except you see otherwise
