@@ -32,7 +32,7 @@ allprojects {
 dependencies {
     ...
     compile 'com.android.support:appcompat-v7:22.0.0' //Make sure appcompat support is also called
-    compile 'com.github.codezee:app:1.0.4' //Declare plugin dependency 
+    compile 'com.github.codezee:firesearch-lib:1.0.+' //Declare plugin dependency 
 }
 ```
 
