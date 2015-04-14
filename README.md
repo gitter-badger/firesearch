@@ -8,7 +8,7 @@ Feel free to download, use and imporve this library as there will be planned upd
 ####Setting up FireSearch
 <b>1. </b>Note: this library is recomended for Sdk Versions 14 and above and for use in Android Studio.
 
-<b>2. </b>In your root project directory, not you app directory, make sure its build.gradle file compiles the below or latest support appcompat in its dependencies:
+<b>2. </b>In your root project directory, not your app directory, make sure its build.gradle file calls mavenCentral:
 
 ```java
 buildscript {
