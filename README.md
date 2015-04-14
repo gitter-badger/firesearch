@@ -62,7 +62,7 @@ because the Android system looks for this in your manifest adn add the following
 </searchable>
 ```
 
-6.In your /res/menu folder, edit whatever menu xml file you will be working with to look similar to the below. This is for the menu:
+6.In your /res/menu folder, edit whatever menu xml file you will be having the search in to look similar to the below:
 
 ```java
 <menu xmlns:android="http://schemas.android.com/apk/res/android"
