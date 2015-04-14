@@ -6,9 +6,9 @@ FireSearch is a generic, easy to use library that allows users carry out search 
 Feel free to download, use and imporve this library as there will be planned updates and more fucntionalities added from time to time.
 
 ####Setting up FireSearch
-1. Note: this library is recomended for Sdk Versions 14 and above and for use in Android Studio.
+<b>1. </b>Note: this library is recomended for Sdk Versions 14 and above and for use in Android Studio.
 
-2. In your root project directory, not you app directory, make sure its build.gradle file compiles the below or latest support appcompat in its dependencies:
+<b>2. </b>In your root project directory, not you app directory, make sure its build.gradle file compiles the below or latest support appcompat in its dependencies:
 
 ```java
 buildscript {
@@ -26,7 +26,7 @@ allprojects {
 }
 ```
 
-3. In your app directory's build.gradle, add the following to your dependency:
+<b>3. </b>In your app directory's build.gradle, add the following to your dependency:
 
 ```java
 dependencies {
@@ -36,7 +36,60 @@ dependencies {
 }
 ```
 
+<b>4. </b>Finally, make sure the menu xml layout that will be using the FireSearch feature is named 'menu_search' e.g. R.menu.menu_search.
+ 
+ 
+ 
 Now you're ready to extend the FireSearch library from your class and make use of its pre-set features.
+
+
+
+####Example
+
+```java
+package firesearch.labs.gpshopper.com.testapp;
+
+import android.os.Bundle;
+import android.view.Menu;
+import android.view.MenuItem;
+
+import com.gpshopper.labs.firesearch.FireSearch;
+
+
+public class MainActivity extends FireSearch {
+
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_main);
+    }
+
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        /**Menu must be named menu_search*/
+        getMenuInflater().inflate(R.menu.menu_search, menu);
+        return true;
+    }
+
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+        return super.onOptionsItemSelected(item);
+    }
+
+    @Override
+    public boolean onSuggestionClick(int position) {
+        /**Override this method to handle what happens on suggestion click*/
+        return true;
+    }
+
+    @Override
+    public boolean onQueryTextSubmit(String query) {
+        /**Override this method to handle what happens when user hits 'Go' or 'Search' button
+        on the keyboard*/
+        return false;
+    }
+```
+
 
 
 ##License
