@@ -8,7 +8,7 @@ and more fucntionalities added fro time to time.
 ####Setting up FireSearch
 1.Note: this library is recomended for Sdk Versions 14 and above and for use in Android Studio.
 
-2.In your 'app' directory, make sure its build.gradle file compiles the below or latest support appcompat following in its dependencies:
+2.In your 'app' directory, make sure its build.gradle file compiles the below or latest support appcompat in its dependencies:
 
 ```java
 dependencies {
