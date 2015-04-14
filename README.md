@@ -83,7 +83,7 @@ Now you're ready to extend the FireSearch library from your class and make use o
 
 
 ##License
-```java
+```text
 The MIT License (MIT)
 
 Copyright (c) 2015 Emmanuel Uwadiegwu
