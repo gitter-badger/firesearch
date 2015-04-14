@@ -4,8 +4,6 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/FireSearch.iml" filepath="$PROJECT_DIR$/FireSearch.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
-      <module fileurl="file://$PROJECT_DIR$/firesearchibrary/firesearchibrary.iml" filepath="$PROJECT_DIR$/firesearchibrary/firesearchibrary.iml" />
-      <module fileurl="file://$PROJECT_DIR$/firesearchlib/firesearchlib.iml" filepath="$PROJECT_DIR$/firesearchlib/firesearchlib.iml" />
     </modules>
   </component>
 </project>
