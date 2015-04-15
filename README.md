@@ -1,7 +1,7 @@
 # FireSearch 1.0
 ##Generic search functionality for Android apps.
 
-FireSearch is a generic, easy to use library that allows users carry out search functions in a Search View. In works by remembering a user's previous search and displays suggestions when words are similar. It is not constrained to just 'Recent Searches.' 
+FireSearch is a generic, easy to use library that allows users carry out search functions in a Search View. It works by remembering a user's previous search and displays suggestions when words are similar. It is not constrained to just 'Recent Searches.' 
 
 Feel free to download, use and imporve this library as there will be planned updates and more fucntionalities added from time to time.
 
