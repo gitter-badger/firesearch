@@ -1,15 +1,17 @@
-apply plugin: 'com.android.application'
+apply plugin: 'com.android.library'
+apply plugin: 'maven'
+apply plugin: 'signing'
+
 
 android {
     compileSdkVersion 21
     buildToolsVersion "22.0.1"
 
     defaultConfig {
-        applicationId "com.gpshopper.labs.firesearch"
         minSdkVersion 14
         targetSdkVersion 21
         versionCode 1
-        versionName "1.0"
+        versionName "1.0.7"
     }
     buildTypes {
         release {
@@ -19,7 +21,66 @@ android {
     }
 }
 
-dependencies {
-    compile fileTree(dir: 'libs', include: ['*.jar'])
-    compile 'com.android.support:appcompat-v7:21.0.3'
+signing {
+    required { isReleaseBuild() && gradle.taskGraph.hasTask("uploadArchives") }
+    sign configurations.archives
 }
+
+
+uploadArchives {
+    repositories {
+        mavenDeployer {
+            beforeDeployment { MavenDeployment deployment -> signing.signPom(deployment) }
+
+            def String sonatypeRepositoryUrl;
+
+            if (isReleaseBuild()) {
+                println 'RELEASE BUILD'
+                sonatypeRepositoryUrl = "https://oss.sonatype.org/service/local/staging/deploy/maven2/"
+            } else {
+                println 'DEBUG BUILD'
+                sonatypeRepositoryUrl = "https://oss.sonatype.org/content/repositories/snapshots/"
+            }
+
+            repository(url: sonatypeRepositoryUrl) {
+                authentication(userName: ossrhUsername, password: ossrhPassword)
+            }
+
+
+            pom.project {
+                name 'FireSearch'
+                packaging 'aar'
+                artifactId 'firesearch-lib'
+                description 'Generic search repo for Android apps'
+                url 'https://github.com/codeZee/FireSearch'
+                scm {
+                    connection 'scm:git@github.com:codeZee/FireSearch.git'
+                    developerConnection 'scm:git@github.com:codeZee/FireSearch.git'
+                    url 'https://github.com/codeZee/FireSearch'
+                }
+
+                licenses {
+                    license {
+                        name 'The MIT License'
+                        url 'http://opensource.org/licenses/MIT'
+                    }
+                }
+
+                developers {
+                    developer {
+                        id 'codezee'
+                        name 'Emmanuel Uwadiegwu'
+                        email 'emeka.uwadiegwu@yahoo.com'
+                    }
+                }
+
+            }
+        }
+
+    }
+}
+        dependencies {
+            compile fileTree(dir: 'libs', include: ['*.jar'])
+            compile 'com.android.support:appcompat-v7:21.0.3'
+        }
+
