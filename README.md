@@ -34,7 +34,7 @@ allprojects {
 ```java
 dependencies {
     ...
-    compile 'com.android.support:appcompat-v7:22.0.0' //Make sure appcompat support is also called
+    compile 'com.android.support:appcompat-v7:22.0.0' //Make sure the latest appcompat support is also called
     compile 'com.gpshopper.firesearch:firesearch-lib:1.0.9' //Declare plugin dependency, this is the latest version
 }
 ```
