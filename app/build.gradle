@@ -11,7 +11,7 @@ android {
         minSdkVersion 14
         targetSdkVersion 21
         versionCode 1
-        versionName "1.0.8"
+        versionName "1.0.9"
     }
     buildTypes {
         release {
@@ -52,11 +52,11 @@ uploadArchives {
                 packaging 'aar'
                 artifactId 'firesearch-lib'
                 description 'Generic search repo for Android apps'
-                url 'https://github.com/codeZee/FireSearch'
+                url 'https://github.com/gpshopper/firesearch'
                 scm {
-                    connection 'scm:git@github.com:codeZee/FireSearch.git'
-                    developerConnection 'scm:git@github.com:codeZee/FireSearch.git'
-                    url 'https://github.com/codeZee/FireSearch'
+                    connection 'scm:git@github.com:gpshopper/firesearch.git'
+                    developerConnection 'scm:git@github.com:gpshopper/firesearch.git'
+                    url 'https://github.com/gpshopper/firesearch'
                 }
 
                 licenses {
