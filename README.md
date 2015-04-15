@@ -3,6 +3,9 @@
 
 FireSearch is a generic, easy to use library that allows users carry out search functions in a Search View. It works by remembering a user's previous search and displays suggestions when words are similar. It is not constrained to just 'Recent Searches.' 
 
+In the near future, or 2.0, there is plan to read, suggest and display search data more dynamically via server requests/responses.
+
+
 Feel free to download, use and imporve this library as there will be planned updates and more fucntionalities added from time to time.
 
 ####Setting up FireSearch
