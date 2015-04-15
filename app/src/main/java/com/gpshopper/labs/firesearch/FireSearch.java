@@ -14,6 +14,10 @@ import android.widget.SimpleCursorAdapter;
 
 
 /**
+ *
+ * @Developer Emmanuel Uwadiegwu
+ *
+ *
  * FireSearch 1.0 is a simple library for predictive search suggestions,
  * based on a user's previous search history. It retains past searches
  * previous search and displays suggestions when there's a similar match.
