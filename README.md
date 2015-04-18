@@ -1,6 +1,8 @@
 # FireSearch 1.0
 ##Generic search functionality for Android apps.
 
+[![Join the chat at https://gitter.im/gpshopper/firesearch](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/gpshopper/firesearch?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
+
 FireSearch is a generic, easy to use library that allows users carry out search functions in a Search View. It works by remembering a user's previous search and displays suggestions when words are similar. It is not constrained to just 'Recent Searches.' 
 
 In the near future, or 2.0, there is plan to read, suggest and display search data more dynamically via server requests/responses.
